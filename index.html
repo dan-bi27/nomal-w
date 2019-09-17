@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> 표준 체중 계산</title>
+
+	<style type="text/css">
+	ㄴ@font-face { font-family: 'GyeonggiBatang'; src: url('httpsㄴ//cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+
+		.warp{background: url('dp.jpg'); margin: auto; background-repeat: no-repeat; width: 100%; height: 1000px; background-size: cover;}
+		
+		.oneroll{width: 500px; height: 500px; background-color: #; border-radius: 20px; margin:auto; padding-top: 270px; text-align: center; font-size: 1.5em;}
+
+		
+	</style>
+</head>
+<body>
+	<div class="warp">
+		<div class="oneroll">
+			<div class="tt"> 철수와 영희와 함께 표준 체중을 알아볼까요? </div>
+			<br><br>
+
+			여자 : 
+			<input type="text" placeholder="키(m)를 입력하세요" id="mha">
+			x
+			<input type="text" placeholder="키(m)을 입력하세요" id="mhb">
+			x 21
+			<input type="button" id="okbut" value="="><br><br>
+
+			<div id="monitor">당신의 표준체중은 000입니다.</div>
+			
+			<br><br>
+
+			남자 :
+			<input type="text" placeholder="키(m)를 입력하세요" id="mhaa">
+			x
+			<input type="text" placeholder="키(m)을 입력하세요" id="mhbb">
+			x 22
+			<input type="button" id="okbutb" value="="><br><br>
+
+			<div id="monitorb">당신의 표준체중은 000입니다.</div>
+			<br><br><br>
+
+		
+
+		<script>
+		okbut.onclick = function(){
+			var nw = mha.value*mhb.value*21;
+			monitor.innerHTML = "당신의 표준체중은 " + Math.round(nw) + "kg 입니다.";
+		}
+		okbutb.onclick = function(){
+			var nw = mhaa.value*mhbb.value*22;
+			monitorb.innerHTML = "당신의 표준체중은 " + Math.round(nw) + "kg 입니다.";
+		}
+
+		</script>
+	</div>
+
+	</div>
+</body>
+</html>
